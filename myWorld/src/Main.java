@@ -3,9 +3,12 @@ import App.GamePanel;
 import javax.swing.*;
 
 public class Main extends JFrame {
+    static JFrame window;
+    static GamePanel gp;
     public static void main(String[] args) {
-        JFrame window = new JFrame("VWorld");
-        window.add(new GamePanel());
+        window = new JFrame("MyWorld");
+        gp = new GamePanel();
+        window.add(gp);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setResizable(false);
         window.pack();
